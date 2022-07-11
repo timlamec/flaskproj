@@ -1,0 +1,93 @@
+2022-07-08 17:55:36,805 ERROR: Exception on /user/g [GET] [in /mnt/e/microblog/venv/lib/python3.8/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/mnt/e/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/e/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/e/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/e/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/mnt/e/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 303, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/mnt/e/microblog/app/routes.py", line 82, in user
+    return render_template('user.html', user=user, posts=posts, form=form)
+  File "/mnt/e/microblog/venv/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/mnt/e/microblog/venv/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/mnt/e/microblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/mnt/e/microblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/mnt/e/microblog/app/templates/user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/mnt/e/microblog/app/templates/base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "/mnt/e/microblog/app/templates/user.html", line 34, in block 'content'
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2022-07-08 17:58:03,769 INFO: Microblog startup [in /mnt/e/microblog/app/__init__.py:44]
+2022-07-08 18:10:55,146 INFO: Microblog startup [in /mnt/e/microblog/app/__init__.py:46]
+2022-07-08 18:20:52,883 INFO: Microblog startup [in /mnt/e/microblog/app/__init__.py:46]
+2022-07-08 18:24:23,555 INFO: Microblog startup [in /mnt/e/microblog/app/__init__.py:46]
+2022-07-08 18:29:18,278 INFO: Microblog startup [in /mnt/e/microblog/app/__init__.py:46]
+2022-07-08 18:33:25,437 INFO: Microblog startup [in /mnt/e/microblog/app/__init__.py:46]
+2022-07-08 19:05:25,937 INFO: Microblog startup [in /mnt/e/microblog/app/__init__.py:46]
+2022-07-08 19:07:32,077 INFO: Microblog startup [in /mnt/e/microblog/app/__init__.py:46]
+2022-07-08 19:08:23,434 INFO: Microblog startup [in /mnt/e/microblog/app/__init__.py:46]
+2022-07-09 11:30:17,795 INFO: Microblog startup [in /mnt/e/microblog/app/__init__.py:48]
+2022-07-09 11:41:29,811 INFO: Microblog startup [in /mnt/e/microblog/app/__init__.py:48]
+2022-07-09 11:45:45,402 INFO: Microblog startup [in /mnt/e/microblog/app/__init__.py:48]
+2022-07-09 12:06:36,044 INFO: Microblog startup [in /mnt/e/microblog/app/__init__.py:50]
+2022-07-09 12:47:27,269 INFO: Microblog startup [in /mnt/e/microblog/app/__init__.py:50]
+2022-07-09 12:48:32,257 INFO: Microblog startup [in /mnt/e/microblog/app/__init__.py:50]
+2022-07-09 12:49:52,007 INFO: Microblog startup [in /mnt/e/microblog/app/__init__.py:50]
+2022-07-09 12:54:10,305 INFO: Microblog startup [in /mnt/e/microblog/app/__init__.py:50]
+2022-07-09 12:55:06,680 INFO: Microblog startup [in /mnt/e/microblog/app/__init__.py:50]
+2022-07-09 12:55:43,783 INFO: Microblog startup [in /mnt/e/microblog/app/__init__.py:50]
+2022-07-09 12:59:47,572 INFO: Microblog startup [in /mnt/e/microblog/app/__init__.py:50]
+2022-07-09 12:59:54,304 ERROR: Exception on /index [GET] [in /mnt/e/microblog/venv/lib/python3.8/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/mnt/e/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/e/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/e/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/e/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/mnt/e/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 303, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/mnt/e/microblog/app/routes.py", line 173, in index
+    return render_template("index.html", title='Home', form=form,
+  File "/mnt/e/microblog/venv/lib/python3.8/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/mnt/e/microblog/venv/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/mnt/e/microblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/mnt/e/microblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/mnt/e/microblog/app/templates/index.html", line 3, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/mnt/e/microblog/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/mnt/e/microblog/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/mnt/e/microblog/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block 'doc'
+    {%- block html %}
+  File "/mnt/e/microblog/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block 'html'
+    {% block body -%}
+  File "/mnt/e/microblog/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 21, in block 'body'
+    {% block navbar %}
+  File "/mnt/e/microblog/app/templates/base.html", line 29, in block 'navbar'
+    <li><a href="{{ url_for('Maps') }}">Maps</a></li>
+  File "/mnt/e/microblog/venv/lib/python3.8/site-packages/flask/helpers.py", line 336, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/mnt/e/microblog/venv/lib/python3.8/site-packages/flask/helpers.py", line 323, in url_for
+    rv = url_adapter.build(
+  File "/mnt/e/microblog/venv/lib/python3.8/site-packages/werkzeug/routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'Maps'. Did you mean 'bootstrap.static' instead?
+2022-07-09 13:00:48,692 INFO: Microblog startup [in /mnt/e/microblog/app/__init__.py:50]
