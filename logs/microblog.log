@@ -37,3 +37,5 @@ jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'static'.
 2022-07-19 12:46:50,941 INFO: Microblog startup [in /mnt/e/microblog/app/__init__.py:50]
 2022-07-19 12:56:40,624 INFO: Microblog startup [in /mnt/e/microblog/app/__init__.py:50]
 2022-07-19 13:10:14,376 INFO: Microblog startup [in /mnt/e/microblog/app/__init__.py:50]
+2022-07-19 14:05:42,489 INFO: Microblog startup [in /mnt/e/microblog/app/__init__.py:50]
+2022-07-19 14:09:40,782 INFO: Microblog startup [in /mnt/e/microblog/app/__init__.py:50]
